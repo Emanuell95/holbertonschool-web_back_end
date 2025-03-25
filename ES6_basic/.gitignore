@@ -1,0 +1,38 @@
+# 💥 Don't track node modules
+node_modules/
+
+# ⚙️ Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ⚙️ Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 🔐 Environment files (if used)
+.env
+.env.local
+.env.*.local
+
+# 💻 macOS system files
+.DS_Store
+
+# 🔄 OS or editor backups
+*.swp
+*.swo
+*.bak
+
+# 📦 Optional lock files (choose depending on your package manager)
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# 📁 Build output (if you use a build system)
+dist/
+build/
+
+# 📸 Optional: VS Code settings
+.vscode/
