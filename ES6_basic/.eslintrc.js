@@ -1,22 +1,24 @@
-module.exports = {
-    env: {
-      browser: false,
-      es6: true,
-      jest: true,
-    },
-    extends: [
-      'airbnb-base',
-      'plugin:jest/all',
-    ],
-    globals: {
-      Atomics: 'readonly',
-      SharedArrayBuffer: 'readonly',
-    },
-    parserOptions: {
+// eslint.config.js
+import js from '@eslint/js';
+import eslintPluginJest from 'eslint-plugin-jest';
+import { flatConfigs } from 'eslint-config-airbnb-base';
+
+export default [
+  js.configs.recommended,
+  ...flatConfigs,
+  {
+    files: ['**/*.js'],
+    languageOptions: {
       ecmaVersion: 2018,
       sourceType: 'module',
+      globals: {
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly',
+      },
     },
-    plugins: ['jest'],
+    plugins: {
+      jest: eslintPluginJest,
+    },
     rules: {
       'no-console': 'off',
       'no-shadow': 'off',
@@ -26,10 +28,14 @@ module.exports = {
         'WithStatement',
       ],
     },
-    overrides:[
-      {
-        files: ['*.js'],
-        excludedFiles: 'babel.config.js',
-      }
-    ]
-  };
+  },
+  {
+    files: ['**/*.test.js', '**/__tests__/**/*.js'],
+    plugins: {
+      jest: eslintPluginJest,
+    },
+    rules: {
+      ...eslintPluginJest.configs.all.rules,
+    },
+  },
+];
