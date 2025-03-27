@@ -1,5 +1,5 @@
-function createEmployeesObject(department, employees) {
-  return {
-    [department]: employees,
-  };
-}
+export default function createEmployeesObject(departmentName, employees) {
+    return {
+      [departmentName]: employees,
+    };
+  }
