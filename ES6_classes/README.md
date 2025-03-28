@@ -1,0 +1,1 @@
+In this project I am practicing ES6 (JavaScript) classes which is essential to the webpages in the internet and to work with the client side and the server side using the tools that provides this language. 
