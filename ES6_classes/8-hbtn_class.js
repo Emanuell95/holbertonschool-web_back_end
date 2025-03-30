@@ -1,3 +1,4 @@
+// In this task, I am creating a class named HolbertonClass.
 export default class HolbertonClass {
     constructor(size, location) {
       this.size = size;
