@@ -1,0 +1,1 @@
+In this project I am working with JavaScript data manipulation using arrays to add, remove, join and other kind of programming methods with it.
