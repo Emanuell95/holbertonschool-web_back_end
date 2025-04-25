@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from typing import List
 
+
 def sum_list(input_list: List[float]) -> float:
     """
     Returns the sum of all float values in the input list.
@@ -12,7 +13,8 @@ def sum_list(input_list: List[float]) -> float:
         The sum of all float values in the input list.
 
     Raises:
-        TypeError: If the input is not a list or if the list contains non-float values.
+        TypeError: If the input is not a list or if the list contains
+        non-float values.
     """
     if not isinstance(input_list, list):
         raise TypeError("Input must be a list")
@@ -24,4 +26,3 @@ def sum_list(input_list: List[float]) -> float:
         total += value
 
     return total
-
