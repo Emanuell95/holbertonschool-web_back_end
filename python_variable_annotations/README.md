@@ -1,0 +1,1 @@
+In this project I am working with Python variable annotations which make the code easier to read and understand.
