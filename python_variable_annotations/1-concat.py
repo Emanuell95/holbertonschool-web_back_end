@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""A script that concatenates two strings."""
-def concat(str1: str, str2: str) -> str:
-    """Return the concatenation of str1 and str2.
+"""A script a type-annotated function concat
+that takes a string str1 and a string str2
+as arguments and returns a concatenated string"""
 
-    Args:
-        str1 (str): The first string.
-        str2 (str): The second string.
 
-    Returns:
-        str: The concatenation of str1 and str2.
-    """
-    return str1 + str2
+def concat (str1:str, str2:str)-> str:
+	"""_summary_
+
+	Args:
+		str1 (string): string
+		str2 (string): string
+
+	Returns:
+		string: a concatenated string
+	"""
+	return str1 + str2
