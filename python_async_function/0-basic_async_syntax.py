@@ -1,16 +1,18 @@
-import asyncio
+#!/usr/bin/env python3
+"""asynchronous coroutine that takes in an integer argument"""
 import random
+import asyncio
+
 
 async def wait_random(max_delay: int = 10) -> float:
-    """
-    Asynchronous coroutine that waits for a random delay between 0 and max_delay seconds.
+    """Wait for random integers between 0 and max_delay
 
     Args:
-    max_delay (int): The maximum delay in seconds. Defaults to 10.
+        max_delay (int): maximum delay value
 
     Returns:
-    float: The actual delay waited.
+       awaited value
     """
-    delay = random.uniform(0, max_delay)
-    await asyncio.sleep(delay)
-    return delay
+    i = random.uniform(0, max_delay)
+    await asyncio.sleep(i)
+    return i
