@@ -1,0 +1,1 @@
+In this project I am working with Asynchronous comprehensions which are a way to work with asynchronous sequences efficiently. They allow you to perform asynchronous operations on each item of a sequence and collect the results in a new sequence. Asynchronous Iterable: is An object that you can loop over using async for .
