@@ -1,0 +1,1 @@
+In this project I am working with Node.js which is important in programming primarily because it enables JavaScript to be used as a server-side runtime environment, extending JavaScript beyond the browser. This allows developers to write both client-side and server-side code in the same language, simplifying full-stack development.
