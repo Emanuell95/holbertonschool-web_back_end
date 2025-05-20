@@ -6,3 +6,4 @@ process.stdin.on('end', () => {
     process.stdout.write('This important software is now closing\n');
 });
 
+
